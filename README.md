@@ -76,7 +76,7 @@ To get a local copy up and running, follow these steps.
 Clone this repository to your desired folder:
 
 > cd my-folder
-> git clone git@github.com:myaccount/my-project.git
+> git clone https://github.com/jubaer919/math-magicians.git
 
 ### Prerequisites
 
@@ -130,7 +130,7 @@ npx eslint ."
 ```
 To Open The Project On The Browser
 npm start
-```
+
 
 ### Deployment
 
