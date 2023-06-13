@@ -1,0 +1,30 @@
+.calculator-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(39, 210, 39), rgb(10, 129, 129));
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: minmax(80px, auto) repeat(5, 70px);
+}
+
+.calculator > button {
+    outline: none;
+    cursor: pointer;
+    border: 1px solid white;
+    font-size: 1.8rem;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.calculator > button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.span-two {
+    grid-column: span 2;
+}
