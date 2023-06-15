@@ -12,6 +12,7 @@ function Calculator() {
 
   return (
     <div className="calculator-container">
+      <h2>let us do some math!</h2>
       <div className="calculator">
         <div className="display">
           <div className="current-value">{calculatorData.next || calculatorData.total || '0'}</div>
