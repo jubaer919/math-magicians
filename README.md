@@ -6,7 +6,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -57,12 +56,6 @@ The repository also contains files for setting up linters and react-app.
 - Display a quote every time you go on quote page from the api.
 - CSS styles Added to the application to make it match [this](https://github.com/microverseinc/curriculum-javascript/blob/main/books/images/math_magicians_core_elements.png) wireframe.
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- N/A
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
