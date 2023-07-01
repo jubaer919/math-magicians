@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './calculator.css';
 
 const QuoteDisplay = () => {
   const [quote, setQuote] = useState('');
@@ -9,23 +8,13 @@ const QuoteDisplay = () => {
   useEffect(() => {
     const fetchQuote = async () => {
       try {
-        const response = await fetch(
-          'https://api.api-ninjas.com/v1/quotes?category=happiness',
-          {
-            headers: {
-              'X-Api-Key': 'o/+TcyPrEUuJuXWcblwB/w==XUMaVQ2GEq6fcrHt', // Replace with your actual API key
-            },
-          },
-        );
-
+        const response = await fetch('https://api.example.com/quote');
         if (!response.ok) {
-          throw new Error(`${response.status} ${response.statusText}`);
+          throw new Error('Failed to fetch quote.');
         }
-
         const data = await response.json();
-        const randomQuote = data[0]?.quote || 'No quote available';
-
-        setQuote(randomQuote);
+        const fetchedQuote = data[0].quote;
+        setQuote(fetchedQuote);
         setIsLoading(false);
       } catch (error) {
         setError(error.message);
@@ -44,12 +33,13 @@ const QuoteDisplay = () => {
     return (
       <div>
         Error:
+        {' '}
         {error}
       </div>
     );
   }
 
-  return <div className="quot-container">{quote}</div>;
+  return <div>{quote}</div>;
 };
 
 export default QuoteDisplay;
